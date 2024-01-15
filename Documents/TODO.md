@@ -1,0 +1,12 @@
+- [ ] scene instant
+- [ ]  level system
+	- [ ] level data serialization
+- [ ] game logic
+	- [ ] check for win
+	- [ ] button pressed and light the round lights
+	- [ ] next level
+	- [ ] change level
+- [ ] help system
+	- [ ] step tips
+	- [ ] display button index number label above every light
+- [ ] GUI

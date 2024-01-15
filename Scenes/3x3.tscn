@@ -1,0 +1,96 @@
+[gd_scene load_steps=5 format=3 uid="uid://dl4r3dk02qag6"]
+
+[ext_resource type="Texture2D" uid="uid://b83ihkq2llq0m" path="res://Assets/LightState01.png" id="2_3bfhl"]
+[ext_resource type="Texture2D" uid="uid://c0in3s01fty02" path="res://Assets/LightState03.png" id="3_jc4bg"]
+[ext_resource type="Script" path="res://Scripts/InitialContainerTransform.cs" id="4_11muw"]
+[ext_resource type="Texture2D" uid="uid://beblkh1dokafr" path="res://Assets/LightState02.png" id="4_uspvr"]
+
+[node name="2x2" type="Node2D"]
+
+[node name="Center" type="CenterContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 462.0
+offset_top = 182.0
+offset_right = 818.0
+offset_bottom = 538.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="InitialContainerTransform" type="Node" parent="Center"]
+script = ExtResource("4_11muw")
+
+[node name="GridContainer" type="GridContainer" parent="Center"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/h_separation = 75
+theme_override_constants/v_separation = 75
+columns = 3
+
+[node name="TextureButton" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton2" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton3" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton4" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton5" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton6" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton7" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton8" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
+
+[node name="TextureButton9" type="TextureButton" parent="Center/GridContainer"]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_3bfhl")
+texture_pressed = ExtResource("3_jc4bg")
+texture_hover = ExtResource("4_uspvr")
