@@ -1,12 +1,22 @@
 using Godot;
 using System;
 
-public partial class InstantScene : Node
+public partial class InstantScene : VBoxContainer
 {
 	[Export]
 	PackedScene[] scenes = new PackedScene[4];
+	[Export]
+	Button[] buttons = new Button[4];
 
 	PackedScene onlyStage;
+
+	public override void _Ready()
+	{
+		buttons[0].Pressed += () => Instant(scenes[0]);
+		buttons[1].Pressed += () => Instant(scenes[1]);
+		buttons[2].Pressed += () => Instant(scenes[2]);
+		buttons[3].Pressed += () => Instant(scenes[3]);
+	}
 
 	public override void _Input(InputEvent @event)
 	{

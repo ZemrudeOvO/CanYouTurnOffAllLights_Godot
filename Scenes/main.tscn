@@ -1,10 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpdatc0t3l3g4"]
+[gd_scene load_steps=2 format=3 uid="uid://dpdatc0t3l3g4"]
 
-[ext_resource type="PackedScene" uid="uid://cpa2anf3gtlcg" path="res://Scenes/2x2.tscn" id="1_hque8"]
-[ext_resource type="Script" path="res://Scripts/InstantScene.cs" id="2_xrh46"]
-[ext_resource type="PackedScene" uid="uid://dl4r3dk02qag6" path="res://Scenes/3x3.tscn" id="3_i85fb"]
-[ext_resource type="PackedScene" uid="uid://ynpm57lptfd0" path="res://Scenes/4x4.tscn" id="4_c2scp"]
-[ext_resource type="PackedScene" uid="uid://dgicocbh86g8e" path="res://Scenes/5x5.tscn" id="5_2inyl"]
+[ext_resource type="PackedScene" uid="uid://t15l3m74e753" path="res://Scenes/GUI.tscn" id="1_oyf6s"]
 
 [node name="Node2D" type="Node2D"]
 texture_filter = 1
@@ -15,6 +11,6 @@ offset_bottom = 720.0
 color = Color(0.196078, 0.196078, 0.196078, 1)
 metadata/_edit_lock_ = true
 
-[node name="InstantScene" type="Node" parent="."]
-script = ExtResource("2_xrh46")
-scenes = [ExtResource("1_hque8"), ExtResource("3_i85fb"), ExtResource("4_c2scp"), ExtResource("5_2inyl")]
+[node name="Control" parent="." instance=ExtResource("1_oyf6s")]
+offset_right = 100.0
+offset_bottom = 176.0
